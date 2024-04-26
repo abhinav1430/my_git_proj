@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form action="/" method="get"></form>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="name">name</label></td>
+                    <td><input type="text" name="name" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">email</label></td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">phone</label></td>
+                    <td><input type="tel" name="phone" id="phone" minlength="10" maxlength="10"></td>
+                </tr>
+                    <td>
+                        <tr><label>Gender</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Profession">Profession</label>
+                    </td>
+                    <td>
+                        <select name="profession" id="profession">
+                            <option value="govt">Govt. Official</option>
+                            <option value="private">Private Employee</option>
+                            <option value="self">Self Employed</option>
+                            <option value="student">Student</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;"><label for="message">Message</label></td>
+                    <td><textarea name="message" id="message" cols="40" rows="6" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="tnc" id="tnc" required>
+                        <label for="tnc">I agree to the terms and conditions</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="reset">Reset</button></td>
+                    <td style="text-align: right;"><button type="submit">Submit</button></td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
